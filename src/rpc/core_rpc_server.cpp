@@ -699,6 +699,22 @@ namespace currency
     return true;
   }
   //------------------------------------------------------------------------------------------------------------------------------
+  bool core_rpc_server::on_get_connections(const COMMAND_RPC_GET_CONNECTIONS::request& req, COMMAND_RPC_GET_CONNECTIONS::response& res, epee::json_rpc::error& error_resp, connection_context& cntx)
+  {
+	if(!check_core_ready())
+	{
+	error_resp.code = CORE_RPC_ERROR_CODE_CORE_BUSY;
+	error_resp.message = "Core is busy.";
+	return false;
+	}
+
+	res.connections = m_p2p.get_payload_object().get_connections();
+
+	res.status = CORE_RPC_STATUS_OK;
+
+	return true;
+  }
+  //------------------------------------------------------------------------------------------------------------------------------
   bool core_rpc_server::on_get_alias_details(const COMMAND_RPC_GET_ALIAS_DETAILS::request& req, COMMAND_RPC_GET_ALIAS_DETAILS::response& res, epee::json_rpc::error& error_resp, connection_context& cntx)
   {
     if(!check_core_ready())
