@@ -1,3 +1,6 @@
+Boolberry [![Stories in Ready](https://badge.waffle.io/BlockchainDevelopmentCompany/boolberry.png?label=ready&title=Ready)](http://waffle.io/BlockchainDevelopmentCompany/boolberry)[![Slack Status](https://boolberry.herokuapp.com/badge.svg)](https://boolberry.herokuapp.com/)
+=========
+
 Building
 --------
 
