@@ -1,4 +1,4 @@
-Boolberry [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) [![Build Status](https://travis-ci.org/BlockchainDevelopmentCompany/boolberry.svg?branch=master)](https://travis-ci.org/BlockchainDevelopmentCompany/boolberry) [![Slack Status](https://boolberry.herokuapp.com/badge.svg)](https://boolberry.herokuapp.com/)  [![Stories in Ready](https://badge.waffle.io/BlockchainDevelopmentCompany/boolberry.png?label=ready&title=Ready)](http://waffle.io/BlockchainDevelopmentCompany/boolberry)
+Boolberry [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](http://www.gnu.org/licenses/lgpl-3.0) [![Build Status](https://travis-ci.org/BlockchainDevelopmentCompany/boolberry.svg?branch=master)](https://travis-ci.org/BlockchainDevelopmentCompany/boolberry) [![Slack Status](https://boolberry.herokuapp.com/badge.svg)](https://boolberry.herokuapp.com/)  [![Stories in Ready](https://badge.waffle.io/BlockchainDevelopmentCompany/boolberry.png?label=ready&title=Ready)](http://waffle.io/BlockchainDevelopmentCompany/boolberry)
 =========
 
 Building
