@@ -106,12 +106,14 @@ namespace currency
 
     struct response
     {
-      std::list<std::string> txs_as_hex;  //transactions blobs as hex
+      std::list<std::string> txs_as_hex;  //Transaction blobs as hex
+      std::list<std::string> txs_as_json; //Transaction blobs translated from hex to JSON
       std::list<std::string> missed_tx;   //not found transactions
       std::string status;
 
       BEGIN_KV_SERIALIZE_MAP()
         KV_SERIALIZE(txs_as_hex)
+        KV_SERIALIZE(txs_as_json)
         KV_SERIALIZE(missed_tx)
         KV_SERIALIZE(status)
       END_KV_SERIALIZE_MAP()
