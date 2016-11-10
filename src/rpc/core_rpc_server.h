@@ -43,7 +43,7 @@ namespace currency
     bool on_set_maintainers_info(const COMMAND_RPC_SET_MAINTAINERS_INFO::request& req, COMMAND_RPC_SET_MAINTAINERS_INFO::response& res, connection_context& cntx);
     bool on_get_tx_pool(const COMMAND_RPC_GET_TX_POOL::request& req, COMMAND_RPC_GET_TX_POOL::response& res, connection_context& cntx);
     bool on_check_keyimages(const COMMAND_RPC_CHECK_KEYIMAGES::request& req, COMMAND_RPC_CHECK_KEYIMAGES::response& res, connection_context& cntx);
-    
+	bool on_check_keyimages_nonbinary(const COMMAND_RPC_CHECK_KEYIMAGES_NONBINARY::request& req, COMMAND_RPC_CHECK_KEYIMAGES_NONBINARY::response& res, connection_context& cntx);
 
     //json_rpc
     bool on_getblockcount(const COMMAND_RPC_GETBLOCKCOUNT::request& req, COMMAND_RPC_GETBLOCKCOUNT::response& res, connection_context& cntx);
@@ -84,6 +84,7 @@ namespace currency
       MAP_URI_AUTO_BIN2("/set_maintainers_info.bin", on_set_maintainers_info, COMMAND_RPC_SET_MAINTAINERS_INFO)
       MAP_URI_AUTO_BIN2("/get_tx_pool.bin", on_get_tx_pool, COMMAND_RPC_GET_TX_POOL)
       MAP_URI_AUTO_BIN2("/check_keyimages.bin", on_check_keyimages, COMMAND_RPC_CHECK_KEYIMAGES)
+	  MAP_URI_AUTO_JON2("/check_key_images", on_check_keyimages_nonbinary, COMMAND_RPC_CHECK_KEYIMAGES_NONBINARY)
       MAP_URI_AUTO_JON2("/gettransactions", on_get_transactions, COMMAND_RPC_GET_TRANSACTIONS)
       MAP_URI_AUTO_JON2("/sendrawtransaction", on_send_raw_tx, COMMAND_RPC_SEND_RAW_TX)
 	  MAP_URI_AUTO_JON2_IF("/start_mining", on_start_mining, COMMAND_RPC_START_MINING, !m_restricted)
